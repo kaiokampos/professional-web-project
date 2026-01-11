@@ -3,6 +3,16 @@
 Projeto criado para aplicar práticas profissionais de desenvolvimento web,
 com foco em código limpo, arquitetura, Git e mentalidade sênior.
 
+## Como rodar o projeto
+
+Abra o arquivo `public/index.html` no navegador.
+
+## Estrutura do projeto
+
+- public/: arquivos servidos ao usuário
+- src/: código-fonte organizado por responsabilidade
+- tests/: testes e experimentos
+
 ## Estrutura do Projeto
 
 O projeto segue uma organização baseada em separação de responsabilidades,
