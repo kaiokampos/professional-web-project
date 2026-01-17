@@ -1,6 +1,6 @@
-/* =========================
-   1. Reset / Base
-========================= */
+/* base/globals.css */
+
+/* Reset */
 *,
 *::before,
 *::after {
@@ -9,23 +9,17 @@
   padding: 0;
 }
 
-/* =========================
-   2. Variáveis Globais
-========================= */
+/* Semantic aliases (UI meaning) */
 :root {
-  --color-bg: #ffffff;
-  --color-text: #111111;
+  --color-bg: var(--color-neutral-100);
+  --color-text: var(--color-neutral-900);
+  --color-primary: var(--color-brand-primary);
 
-  --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
+  --font-base: var(--font-family-base);
+  --line-height-body: var(--line-height-base);
 }
 
-/* =========================
-   3. Tipografia Base
-========================= */
+/* Base typography */
 html {
   font-size: 16px;
 }
@@ -34,12 +28,10 @@ body {
   font-family: var(--font-base);
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.6;
+  line-height: var(--line-height-body);
 }
 
-/* =========================
-   4. Elementos Globais
-========================= */
+/* Global elements */
 a {
   color: inherit;
   text-decoration: none;
