@@ -1,0 +1,47 @@
+/* base/globals.css */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Semantic aliases (UI meaning) */
+:root {
+  --color-bg: var(--color-neutral-100);
+  --color-text: var(--color-neutral-900);
+  --color-primary: var(--color-brand-primary);
+
+  --font-base: var(--font-family-base);
+  --line-height-body: var(--line-height-base);
+}
+
+/* Base typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: var(--line-height-body);
+}
+
+/* Global elements */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
