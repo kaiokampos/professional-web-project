@@ -1,0 +1,55 @@
+/* =========================
+   1. Reset / Base
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   2. Variáveis Globais
+========================= */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+/* =========================
+   3. Tipografia Base
+========================= */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* =========================
+   4. Elementos Globais
+========================= */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
