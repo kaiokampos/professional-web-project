@@ -1,0 +1,7 @@
+/* components/hero.css */
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
