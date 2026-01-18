@@ -6,6 +6,7 @@
 
 /* Layout */
 @import "./layout/grid.css";
+@import "./layout/sections.css";
 
 /* Utilities */
 @import "./utilities/helpers.css";

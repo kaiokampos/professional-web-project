@@ -1,0 +1,23 @@
+/* layout/sections.css */
+
+/* Seção base */
+.section {
+  padding-block: var(--space-xl);
+}
+
+/* Conteúdo centralizado */
+.section__inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+/* Variações */
+.section--alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* Títulos de seção */
+.section__title {
+  margin-bottom: var(--space-lg);
+}
