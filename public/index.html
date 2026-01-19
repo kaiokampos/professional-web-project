@@ -38,8 +38,11 @@
             </p>
 
             <div class="hero-actions">
-              <a href="#projects">Ver projetos</a>
-              <a href="#contact">Entrar em contato</a>
+              <a href="#projects" class="btn btn--primary"> Ver projetos </a>
+
+              <a href="#contact" class="btn btn--secondary">
+                Entrar em contato
+              </a>
             </div>
           </div>
         </div>
@@ -71,31 +74,33 @@
 
       <!-- Serviços / habilidades -->
       <section id="services" class="section" aria-labelledby="services-title">
-        <div class="container">
-          <div class="services">
-            <h2 id="services-title">O que eu faço</h2>
+        <div class="section__inner">
+          <h2 id="services-title" class="section__title">O que eu faço</h2>
 
-            <article class="service">
-              <h3>Desenvolvimento de interfaces web</h3>
-              <p>
-                Crio interfaces claras, responsivas e acessíveis, com foco em
+          <div class="grid grid-3">
+            <article class="card card--service">
+              <h3 class="card__title">Desenvolvimento de interfaces web</h3>
+              <p class="card__description">
+                Interfaces claras, responsivas e acessíveis, com foco em
                 organização de código e manutenção a longo prazo.
               </p>
             </article>
 
-            <article class="service">
-              <h3>Estruturação e refatoração de projetos</h3>
-              <p>
-                Organizo projetos existentes, melhorando legibilidade,
-                arquitetura e boas práticas para facilitar evolução futura.
+            <article class="card card--service">
+              <h3 class="card__title">
+                Estruturação e refatoração de projetos
+              </h3>
+              <p class="card__description">
+                Organização de projetos existentes, melhorando arquitetura,
+                legibilidade e boas práticas.
               </p>
             </article>
 
-            <article class="service">
-              <h3>Projetos sob medida</h3>
-              <p>
-                Desenvolvo soluções personalizadas de acordo com a necessidade
-                real do negócio, evitando complexidade desnecessária.
+            <article class="card card--service">
+              <h3 class="card__title">Projetos sob medida</h3>
+              <p class="card__description">
+                Soluções personalizadas de acordo com a necessidade real do
+                negócio, sem complexidade desnecessária.
               </p>
             </article>
           </div>
@@ -104,27 +109,22 @@
 
       <!-- Projetos -->
       <section id="projects" class="section" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="projects">
-            <h2 id="projects-title">Projetos</h2>
+        <div class="section__inner">
+          <h2 id="projects-title" class="section__title">Projetos</h2>
 
-            <article class="project">
-              <h3>Professional Web Project</h3>
+          <div class="grid grid-2">
+            <article class="card card--project">
+              <h3 class="card__title">Professional Web Project</h3>
 
-              <p>
-                Projeto criado para aplicar boas práticas de organização,
-                semântica e arquitetura em um site profissional.
+              <p class="card__description">
+                Projeto focado em boas práticas de HTML semântico, CSS modular e
+                arquitetura escalável.
               </p>
 
-              <p>
-                O foco foi construir uma base escalável, com código legível e
-                estrutura preparada para crescimento.
-              </p>
-
-              <ul>
+              <ul class="card__list">
                 <li>HTML semântico</li>
-                <li>CSS modular e organizado</li>
-                <li>Controle de versão com Git</li>
+                <li>CSS modular</li>
+                <li>Git workflow profissional</li>
               </ul>
             </article>
           </div>
