@@ -1,0 +1,11 @@
+/* components/services.css */
+
+#services .grid {
+  align-items: stretch;
+}
+
+.card--service {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
