@@ -12,3 +12,11 @@
 .site-footer__text {
   font-size: var(--font-size-sm);
 }
+
+.footer {
+  padding: var(--space-lg) 0;
+}
+
+.footer p {
+  text-align: center;
+}
