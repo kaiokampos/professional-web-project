@@ -5,8 +5,8 @@
 @import "../../../src/css/base/globals.css";
 
 /* Layout */
-@import "../../../src/css/layout/sections.css";
 @import "../../../src/css/layout/grid.css";
+@import "../../../src/css/layout/sections.css";
 
 /* Utilities */
 @import "../../../src/css/utilities/helpers.css";
@@ -17,3 +17,7 @@
 @import "../../../src/css/components/buttons.css";
 @import "../../../src/css/components/cards.css";
 @import "../../../src/css/components/hero.css";
+@import "./../../src/css/components/services.css";
+@import "./../../src/css/components/projects.css";
+@import "./../../src/css/components/contact.css";
+@import "./../../src/css/components/about.css";

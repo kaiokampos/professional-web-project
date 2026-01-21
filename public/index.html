@@ -13,11 +13,21 @@
 
   <body>
     <!-- Cabeçalho global -->
-    <header>
-      <nav aria-label="Navegação principal">
-        <!-- logo / nome -->
-        <!-- links -->
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-header__inner" aria-label="Navegação principal">
+          <div class="site-header__logo">
+            <a href="#hero">Kaio Campos</a>
+          </div>
+
+          <ul class="site-header__menu">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Conteúdo principal -->
@@ -73,8 +83,12 @@
       </section>
 
       <!-- Serviços / habilidades -->
-      <section id="services" class="section" aria-labelledby="services-title">
-        <div class="section__inner">
+      <section
+        id="services"
+        class="section services"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
           <h2 id="services-title" class="section__title">O que eu faço</h2>
 
           <div class="grid grid-3">
@@ -113,8 +127,7 @@
           <header class="section__header">
             <h2 id="projects-title" class="section__title">Projetos</h2>
             <p class="section__subtitle">
-              Alguns projetos que demonstram minha forma de pensar, estruturar e
-              escrever código.
+              Projetos que demonstram organização, arquitetura e boas práticas.
             </p>
           </header>
 
@@ -190,8 +203,10 @@
     </main>
 
     <!-- Rodapé -->
-    <footer>
-      <p>&copy; 2026 Kaio Campos</p>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Kaio Campos</p>
+      </div>
     </footer>
 
     <!-- JS sempre no final -->

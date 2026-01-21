@@ -1,0 +1,57 @@
+/* =========================
+components/projects.css
+========================= */
+
+.section__header {
+  max-width: 720px;
+  margin-bottom: var(--space-xl);
+}
+
+.section__subtitle {
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.project-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.project-card__description {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+.project-card__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.project-card__tech li {
+  font-size: var(--font-size-sm);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-neutral-900);
+  border-radius: 4px;
+}
+
+.project-card__actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: auto;
+}
+
+.project-card--placeholder {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
