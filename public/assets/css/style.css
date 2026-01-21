@@ -1,5 +1,19 @@
-/* public/assets/css/style.css */
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-}
+/* Base */
+@import "../../../src/css/base/reset.css";
+@import "../../../src/css/base/variables.css";
+@import "../../../src/css/base/typography.css";
+@import "../../../src/css/base/globals.css";
+
+/* Layout */
+@import "../../../src/css/layout/sections.css";
+@import "../../../src/css/layout/grid.css";
+
+/* Utilities */
+@import "../../../src/css/utilities/helpers.css";
+
+/* Components */
+@import "../../../src/css/components/header.css";
+@import "../../../src/css/components/footer.css";
+@import "../../../src/css/components/buttons.css";
+@import "../../../src/css/components/cards.css";
+@import "../../../src/css/components/hero.css";
