@@ -1,0 +1,19 @@
+/* components/contact.css */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 640px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.contact-links a {
+  font-weight: 500;
+  text-decoration: underline;
+}
