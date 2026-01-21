@@ -25,3 +25,7 @@
   font-size: var(--font-size-sm);
   font-weight: 500;
 }
+
+.site-header__menu a:hover {
+  text-decoration: underline;
+}
