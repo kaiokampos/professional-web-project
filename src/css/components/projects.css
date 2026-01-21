@@ -1,6 +1,7 @@
-/* components/projects.css */
+/* =========================
+components/projects.css
+========================= */
 
-/* Header da seção */
 .section__header {
   max-width: 720px;
   margin-bottom: var(--space-xl);
@@ -11,26 +12,22 @@
   margin-top: var(--space-xs);
 }
 
-/* Project card */
 .project-card {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-/* Título */
 .project-card__title {
   font-size: var(--font-size-lg);
   font-weight: 600;
 }
 
-/* Descrição */
 .project-card__description {
   font-size: var(--font-size-base);
   line-height: 1.6;
 }
 
-/* Tech list */
 .project-card__tech {
   display: flex;
   flex-wrap: wrap;
@@ -45,14 +42,12 @@
   border-radius: 4px;
 }
 
-/* Actions */
 .project-card__actions {
   display: flex;
   gap: var(--space-sm);
   margin-top: auto;
 }
 
-/* Placeholder */
 .project-card--placeholder {
   align-items: center;
   justify-content: center;

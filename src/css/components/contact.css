@@ -1,4 +1,6 @@
-/* components/contact.css */
+/* =========================
+components/contact.css
+========================= */
 
 .contact {
   display: flex;
@@ -7,13 +9,20 @@
   max-width: 640px;
 }
 
+.contact p {
+  margin-bottom: var(--space-md);
+}
+
 .contact-links {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  list-style: none;
+  padding: 0;
+  margin-top: var(--space-lg);
+}
+
+.contact-links li + li {
+  margin-top: var(--space-sm);
 }
 
 .contact-links a {
   font-weight: 500;
-  text-decoration: underline;
 }

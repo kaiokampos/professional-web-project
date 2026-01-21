@@ -1,11 +1,30 @@
 /* components/services.css */
 
-#services .grid {
+/* Section container */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Grid interno da seção */
+.services .grid {
   align-items: stretch;
 }
 
+/* Card de serviço */
 .card--service {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+}
+
+.card--service .card__title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.card--service .card__description {
+  color: var(--color-text-muted);
+  line-height: 1.6;
 }
