@@ -1,49 +1,44 @@
-/* components/cards.css */
-
+/* Card base */
 .card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  padding: var(--space-md);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-neutral-200);
   border-radius: var(--radius-md);
   background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
 }
 
-.card__header {
-  margin-bottom: var(--space-sm);
-}
-
-.card__title {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-
-.card__body {
-  flex: 1;
-}
-
-.card__description {
-  margin-bottom: var(--space-sm);
-  font-size: 0.95rem;
-}
-
-.card__tags {
+/* Project card */
+.project-card {
   display: flex;
-  gap: var(--space-xs);
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.project-card__title {
+  font-size: var(--font-size-lg);
+}
+
+.project-card__description {
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.project-card__tech {
+  display: flex;
   flex-wrap: wrap;
-}
-
-.card__tags li {
+  gap: var(--space-xs);
   font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  background-color: var(--color-bg-alt);
-  border-radius: var(--radius-sm);
 }
 
-.card__footer {
-  margin-top: var(--space-md);
+.project-card__actions {
+  margin-top: auto;
   display: flex;
   gap: var(--space-sm);
+}
+
+/* Placeholder */
+.project-card--placeholder {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.6;
 }
