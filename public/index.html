@@ -110,23 +110,41 @@
       <!-- Projetos -->
       <section id="projects" class="section" aria-labelledby="projects-title">
         <div class="section__inner">
-          <h2 id="projects-title" class="section__title">Projetos</h2>
+          <header class="section__header">
+            <h2 id="projects-title" class="section__title">Projetos</h2>
+            <p class="section__description">
+              Alguns projetos desenvolvidos com foco em organização, boas
+              práticas e código profissional.
+            </p>
+          </header>
 
-          <div class="grid grid-2">
-            <article class="card card--project">
-              <h3 class="card__title">Professional Web Project</h3>
+          <div class="grid grid-3">
+            <!-- Card -->
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Professional Web Project</h3>
+              </header>
 
-              <p class="card__description">
-                Projeto focado em boas práticas de HTML semântico, CSS modular e
-                arquitetura escalável.
-              </p>
+              <div class="card__body">
+                <p class="card__description">
+                  Portfólio profissional desenvolvido com HTML semântico, CSS
+                  modular e fluxo de trabalho baseado em Git e Pull Requests.
+                </p>
 
-              <ul class="card__list">
-                <li>HTML semântico</li>
-                <li>CSS modular</li>
-                <li>Git workflow profissional</li>
-              </ul>
+                <ul class="card__tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+
+              <footer class="card__footer">
+                <a href="#" class="btn btn--primary">Ver projeto</a>
+                <a href="#" class="btn btn--secondary">Código</a>
+              </footer>
             </article>
+
+            <!-- Outros cards futuramente -->
           </div>
         </div>
       </section>
