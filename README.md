@@ -145,9 +145,3 @@ Desenvolvedor Web focado em código limpo, arquitetura e soluções profissionai
 - Email: [kaiocamposti@gmail.com](mailto:kaiocamposti@gmail.com)
 
 ---
-
-## 📌 Observação final
-
-Este projeto foi construído com mentalidade de **produto real**, não de tutorial.
-
-Se você entende essa base, você entende como projetos profissionais realmente funcionam.
