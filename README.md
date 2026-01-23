@@ -1,85 +1,115 @@
 # Professional Web Project
 
-Projeto criado para aplicar práticas profissionais de desenvolvimento web,
-com foco em código limpo, arquitetura, Git e mentalidade sênior.
+Projeto criado para aplicar **práticas profissionais de desenvolvimento web**,  
+com foco em:
 
-## Como rodar o projeto
+- código limpo e legível
+- arquitetura escalável
+- organização semântica
+- uso correto de Git (branches, commits e PRs)
+- mentalidade de engenharia, não apenas visual
 
-Abra o arquivo `public/index.html` no navegador.
+Este repositório serve como **portfólio técnico** e como **base reutilizável** para projetos reais.
 
-## Estrutura do projeto
+---
 
-- public/: arquivos servidos ao usuário
-- src/: código-fonte organizado por responsabilidade
-- tests/: testes e experimentos
+## 🎯 Objetivo do Projeto
 
-## Estrutura do Projeto
+Demonstrar como um desenvolvedor profissional estrutura um projeto front-end desde o início, pensando em:
 
-O projeto segue uma organização baseada em separação de responsabilidades,
-facilitando manutenção, escalabilidade e colaboração em equipe.
+- manutenção a longo prazo
+- colaboração em equipe
+- clareza para revisores e recrutadores
+- evolução incremental e control reminded (sem gambiarras)
+
+---
+
+## 🚀 Como rodar o projeto
+
+Por enquanto, não há build pipeline.
+
+1. Clone o repositório
+2. Abra o arquivo abaixo no navegador:
+
+```bash
+public/index.html
+
+
+📂 public/
+
+Contém apenas arquivos servidos diretamente ao navegador.
+
+Nada aqui deve conter lógica de desenvolvimento ou código experimental.
+
+index.html
+Entrada da aplicação (HTML semântico)
+
+assets/
+Arquivos finais usados em runtime (CSS, JS, imagens)
+
+📂 src/
+
+Código-fonte real do projeto, organizado para desenvolvimento e manutenção.
+Esse diretório não é servido diretamente ao usuário.
+
+📂 src/css/
+
+Arquitetura CSS modular:
+
+base/
+Fundamentos globais (reset, variáveis, tipografia)
+
+layout/
+Estrutura da página (grid, sections, containers)
+
+components/
+Componentes reutilizáveis (buttons, cards, header, footer)
+
+utilities/
+Classes utilitárias e helpers
+
+main.css
+Entry point que importa todos os módulos de CSS🌿 Workflow de Git
+
+O projeto segue um fluxo profissional de branches:
+
+main     → código estável (produção)
+develop  → integração contínua
+feature/* → desenvolvimento de funcionalidades
+
+
+📝 Padrão de Commits
+
+Utilizamos Conventional Commits:
+
+feat(scope): descrição
+
+refactor(scope): descrição
+
+fix(scope): descrição
+
+chore(scope): descrição
+
+📁 Estrutura do Projeto
+
+O projeto segue separação clara de responsabilidades, evitando acoplamento
+e facilitando evolução.
 
 .
 ├── public/
-│ ├── assets/
-│ │ ├── css/
-│ │ │ └── style.css
-│ │ ├── img/
-│ │ └── js/
-│ │ └── app.js
-│ └── index.html
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── img/
+│   │   └── js/
+│   │       └── app.js
+│   └── index.html
 ├── src/
-│ ├── css/
-│ │ ├── base/
-│ │ ├── components/
-│ │ └── utilities/
-│ └── js/
-│ ├── components/
-│ └── utils/
-├── tests/
+│   └── css/
+│       ├── base/
+│       ├── components/
+│       ├── layout/
+│       ├── utilities/
+│       └── main.css
 └── README.md
-
-### 📁 public/
-
-Contém os arquivos que são **servidos diretamente ao navegador**.
-Nenhuma lógica sensível ou código fonte de desenvolvimento deve ficar aqui.
-
-- **index.html**: ponto de entrada da aplicação
-- **assets/**: arquivos estáticos processados ou copiados para produção
-
-### 📁 public/assets/
-
-Arquivos estáticos utilizados pela aplicação em runtime.
-
-- **css/**: arquivos CSS finais (gerados ou organizados)
-- **js/**: bundle ou scripts finais usados pelo navegador
-- **img/**: imagens, ícones e mídias
-
-### 📁 src/
-
-Código fonte real do projeto, organizado por responsabilidade.
-Esse diretório **não é servido diretamente** ao usuário final.
-
-### 📁 src/css/
-
-Estilos organizados de forma modular:
-
-- **base/**: reset, variáveis, tipografia, estilos globais
-- **components/**: estilos específicos de componentes
-- **utilities/**: classes utilitárias (helpers, espaçamentos, estados)
-
-### 📁 src/js/
-
-Código JavaScript organizado por domínio:
-
-- **components/**: componentes da interface e lógica associada
-- **utils/**: funções utilitárias reutilizáveis
-
-### 📁 tests/
-
-Testes automatizados (unitários, integração ou E2E),
-garantindo confiabilidade e segurança nas mudanças do código.
-
-### 📄 .gitignore
-
-Define arquivos e diretórios que não devem ser versionados,
-como dependências, builds e arquivos temporários.
+```
