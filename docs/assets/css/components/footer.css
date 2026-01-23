@@ -1,0 +1,16 @@
+/* =========================
+components/footer.css
+========================= */
+
+.site-footer {
+  border-top: 1px solid var(--color-neutral-900);
+}
+
+.site-footer__inner {
+  padding-block: var(--space-md);
+  text-align: center;
+}
+
+.site-footer__text {
+  font-size: var(--font-size-sm);
+}

@@ -1,0 +1,18 @@
+/* =========================
+components/cards.css
+========================= */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  padding: var(--space-lg);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+}
+
+.card--service {
+  gap: var(--space-sm);
+}
