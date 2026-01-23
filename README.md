@@ -1,115 +1,153 @@
 # Professional Web Project
 
-Projeto criado para aplicar **práticas profissionais de desenvolvimento web**,  
-com foco em:
+Base profissional para criação de sites e portfólios, focada em **arquitetura limpa**, **HTML semântico**, **CSS modular** e **boas práticas reais de mercado**.
 
-- código limpo e legível
-- arquitetura escalável
-- organização semântica
-- uso correto de Git (branches, commits e PRs)
-- mentalidade de engenharia, não apenas visual
-
-Este repositório serve como **portfólio técnico** e como **base reutilizável** para projetos reais.
+Este projeto não é um template genérico: ele foi pensado para servir como **fundação sólida** para produtos web que precisam ser claros, escaláveis e fáceis de manter.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Objetivo do projeto
 
-Demonstrar como um desenvolvedor profissional estrutura um projeto front-end desde o início, pensando em:
+Criar uma base de front-end que:
 
-- manutenção a longo prazo
-- colaboração em equipe
-- clareza para revisores e recrutadores
-- evolução incremental e control reminded (sem gambiarras)
+- Seja fácil de entender para outros desenvolvedores
+- Escale sem virar um CSS/HTML desorganizado
+- Utilize separação clara de responsabilidades
+- Siga padrões usados em times profissionais
+
+---
+
+## 🧠 Conceitos aplicados
+
+- HTML semântico e acessível
+- CSS modular (por responsabilidade, não por página)
+- Organização em camadas (base, layout, components, utilities)
+- Design simples, legível e funcional
+- Git Flow para controle de versões
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+.
+├── public
+│   ├── assets
+│   │   ├── css
+│   │   │   └── style.css      # CSS final compilado
+│   │   └── js
+│   │       └── app.js         # JS principal
+│   └── index.html             # HTML final
+├── src
+│   └── css
+│       ├── base               # Reset, variáveis e tipografia
+│       ├── layout             # Grid e seções
+│       ├── components         # Componentes reutilizáveis
+│       ├── utilities          # Helpers utilitários
+│       └── main.css           # Arquivo central de imports
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🎨 Arquitetura CSS
+
+### Base
+
+Responsável pelos fundamentos do projeto:
+
+- `reset.css`
+- `variables.css`
+- `typography.css`
+- `globals.css`
+
+### Layout
+
+Define estruturas de página:
+
+- Grid
+- Espaçamentos globais
+- Seções
+
+### Components
+
+Cada componente tem seu próprio arquivo:
+
+- header
+- hero
+- about
+- services
+- projects
+- contact
+- buttons
+- cards
+- footer
+
+Nada de CSS gigante ou genérico demais.
+
+### Utilities
+
+Classes pequenas e utilitárias para ajustes pontuais.
+
+---
+
+## 🧩 HTML
+
+- Uso correto de `header`, `main`, `section`, `article`, `footer`
+- Atributos `aria` quando necessário
+- Estrutura clara e previsível
+
+O HTML conversa diretamente com o CSS — sem gambiarras.
+
+---
+
+## 🌱 Fluxo de Git (Git Flow)
+
+Branches principais:
+
+- `main` → versão estável / produção
+- `develop` → integração contínua
+- `feature/*` ou `chore/*` → desenvolvimento
+
+Exemplo de fluxo:
+
+```bash
+git checkout develop
+git checkout -b feature/nova-secao
+# trabalha
+# commit
+git push origin feature/nova-secao
+```
+
+Depois, merge para `develop`.
 
 ---
 
 ## 🚀 Como rodar o projeto
 
-Por enquanto, não há build pipeline.
+Projeto 100% estático.
 
-1. Clone o repositório
-2. Abra o arquivo abaixo no navegador:
+Opções:
 
-```bash
-public/index.html
+- Abrir o `public/index.html` direto no navegador
+- Usar Live Server (VS Code)
+- Servir com qualquer servidor estático simples
 
+---
 
-📂 public/
+## 👤 Autor
 
-Contém apenas arquivos servidos diretamente ao navegador.
+**Kaio Campos**
+Desenvolvedor Web focado em código limpo, arquitetura e soluções profissionais.
 
-Nada aqui deve conter lógica de desenvolvimento ou código experimental.
+- GitHub: [https://github.com/kaiokampos](https://github.com/kaiokampos)
+- Email: [kaiocamposti@gmail.com](mailto:kaiocamposti@gmail.com)
 
-index.html
-Entrada da aplicação (HTML semântico)
+---
 
-assets/
-Arquivos finais usados em runtime (CSS, JS, imagens)
+## 📌 Observação final
 
-📂 src/
+Este projeto foi construído com mentalidade de **produto real**, não de tutorial.
 
-Código-fonte real do projeto, organizado para desenvolvimento e manutenção.
-Esse diretório não é servido diretamente ao usuário.
-
-📂 src/css/
-
-Arquitetura CSS modular:
-
-base/
-Fundamentos globais (reset, variáveis, tipografia)
-
-layout/
-Estrutura da página (grid, sections, containers)
-
-components/
-Componentes reutilizáveis (buttons, cards, header, footer)
-
-utilities/
-Classes utilitárias e helpers
-
-main.css
-Entry point que importa todos os módulos de CSS🌿 Workflow de Git
-
-O projeto segue um fluxo profissional de branches:
-
-main     → código estável (produção)
-develop  → integração contínua
-feature/* → desenvolvimento de funcionalidades
-
-
-📝 Padrão de Commits
-
-Utilizamos Conventional Commits:
-
-feat(scope): descrição
-
-refactor(scope): descrição
-
-fix(scope): descrição
-
-chore(scope): descrição
-
-📁 Estrutura do Projeto
-
-O projeto segue separação clara de responsabilidades, evitando acoplamento
-e facilitando evolução.
-
-.
-├── public/
-│   ├── assets/
-│   │   ├── css/
-│   │   │   └── style.css
-│   │   ├── img/
-│   │   └── js/
-│   │       └── app.js
-│   └── index.html
-├── src/
-│   └── css/
-│       ├── base/
-│       ├── components/
-│       ├── layout/
-│       ├── utilities/
-│       └── main.css
-└── README.md
-```
+Se você entende essa base, você entende como projetos profissionais realmente funcionam.
